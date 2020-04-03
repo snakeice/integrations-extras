@@ -5,6 +5,7 @@ files:
   - template: init_config
     options:
       - template: init_config/default
+      - template: init_config/http
   - template: instances
     options:
     - name: url
@@ -24,11 +25,6 @@ files:
         type: array
         items:
           type: string
-    - name: timeout
-      required: false
-      description: max timeout of requests.
-      value:
-        example: 20
-        type: integer
     - template: instances/tags
     - template: instances/global
+    - template: instances/http

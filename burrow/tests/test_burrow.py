@@ -1,8 +1,7 @@
 import pytest
 
-from datadog_checks.base.stubs.aggregator import AggregatorStub
-from datadog_checks.burrow import BurrowCheck
 from datadog_checks.base import ConfigurationError
+from datadog_checks.burrow import BurrowCheck
 
 
 @pytest.mark.integration
